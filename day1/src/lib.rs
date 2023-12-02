@@ -1,7 +1,5 @@
 use fancy_regex::Regex;
 use std::collections::HashMap;
-use utils::read_file;
-
 
 fn sum_digits(input: &str) -> u32 {
     // iterate over lines, filter out non-digits, get first and last, sum
@@ -63,14 +61,14 @@ fn sum_digits_expanded(input: &str) -> u32 {
         .sum()
 }
 
+const INPUT: &str = include_str!("calibration.txt");
+
 pub fn day1_1() -> u32 {
-    let input = read_file("src/day1/calibration.txt");
-    sum_digits(&input)
+    sum_digits(INPUT)
 }
 
 pub fn day1_2() -> u32 {
-    let input = read_file("src/day1/calibration.txt");
-    sum_digits_expanded(&input)
+    sum_digits_expanded(INPUT)
 }
 
 #[cfg(test)]

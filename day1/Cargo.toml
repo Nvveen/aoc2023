@@ -7,4 +7,3 @@ edition.workspace = true
 
 [dependencies]
 fancy-regex = "0.12.0"
-utils = { path = "../utils" }
