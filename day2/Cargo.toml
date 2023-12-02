@@ -1,13 +1,7 @@
-[workspace]
-members = ["day1", "day2"]
-default-members = ["day1", "day2"]
-
-[workspace.package]
-edition = "2021"
-
 [package]
+name = "day2"
 version = "0.1.0"
-name = "aoc2023"
+edition.workspace = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
