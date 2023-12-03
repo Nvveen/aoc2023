@@ -44,6 +44,9 @@ version = "0.1.0"
 [[package]]
 name = "day3"
 version = "0.1.0"
+dependencies = [
+ "fancy-regex",
+]
 
 [[package]]
 name = "fancy-regex"
