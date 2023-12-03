@@ -1,6 +1,6 @@
 [workspace]
-members = ["day1", "day2"]
-default-members = ["day1", "day2"]
+members = ["day1", "day2", "day3"]
+default-members = ["day1", "day2", "day3"]
 
 [workspace.package]
 edition = "2021"
