@@ -19,6 +19,6 @@ mod tests {
 
     #[test]
     fn test_day5_2() {
-        assert_eq!({{crate_name}}_1(INPUT), 1);
+        assert_eq!({{crate_name}}_2(INPUT), 1);
     }
 }
