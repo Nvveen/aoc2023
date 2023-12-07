@@ -13,12 +13,12 @@ mod tests {
     const INPUT: &str = r#""#;
 
     #[test]
-    fn test_day5_1() {
+    fn test_{{crate_name}}_1() {
         assert_eq!({{crate_name}}_1(INPUT), 1);
     }
 
     #[test]
-    fn test_day5_2() {
+    fn test_{{crate_name}}_2() {
         assert_eq!({{crate_name}}_2(INPUT), 1);
     }
 }
