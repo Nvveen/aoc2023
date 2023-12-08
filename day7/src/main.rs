@@ -1,4 +1,7 @@
-use day7::{ day7_1, day7_2 };
+mod part1;
+mod part2;
+use part1::day7_1;
+use part2::day7_2;
 
 const INPUT: &str = include_str!("input");
 

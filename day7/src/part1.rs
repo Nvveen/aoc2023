@@ -1,7 +1,4 @@
-use std::{
-    cmp::Ordering,
-    collections::{HashMap, HashSet},
-};
+use std::{cmp::Ordering, collections::HashSet};
 
 #[derive(Debug, PartialEq, Eq, Hash, Clone, Ord, PartialOrd)]
 enum Card {
@@ -115,10 +112,6 @@ pub fn day7_1(input: &str) -> u32 {
         .sum::<u32>()
 }
 
-pub fn day7_2(input: &str) -> u64 {
-    0
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -132,10 +125,5 @@ QQQJA 483"#;
     #[test]
     fn test_day7_1() {
         assert_eq!(day7_1(INPUT), 6440);
-    }
-
-    #[test]
-    fn test_day7_2() {
-        assert_eq!(day7_2(INPUT), 0);
     }
 }
