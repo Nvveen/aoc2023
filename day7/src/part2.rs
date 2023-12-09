@@ -1,7 +1,4 @@
-use std::{
-    cmp::Ordering,
-    collections::{HashMap, HashSet},
-};
+use std::{cmp::Ordering, collections::HashSet};
 
 #[derive(Debug, PartialEq, Eq, Hash, Clone, Ord, PartialOrd)]
 enum Card {
@@ -81,7 +78,7 @@ impl Hand {
         let missing = 5 - counts.iter().sum::<usize>();
         match counts.last_mut() {
             None => counts.push(5),
-            Some(v) => *v += missing
+            Some(v) => *v += missing,
         }
         match counts.as_slice() {
             [1, 1, 1, 1, 1] => HandType::HighCard,
